@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Burnout & Trauma-Informed Care | Research Microsite</title>
+  <meta name="description" content="Evidence-informed research proposal on trauma-informed care (TIC) and burnout among juvenile justice professionals."/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">Research Microsite</div>
+        <h1>Burnout Among Juvenile Justice Professionals</h1>
+        <p class="subtitle">An Ivy-style, consulting-ready portfolio: evidence snapshot + trauma-informed care (TIC) proposal</p>
+        <div class="meta">
+          <span><strong>Author:</strong> Zafron Khan</span>
+          <span><strong>Program:</strong> PSY-693-O500 (Capstone)</span>
+          <span><strong>Last updated:</strong> <span id="lastUpdated"></span></span>
+        </div>
+        <div class="cta-row">
+          <button class="cta" onclick="loadSection('overview')">Start here</button>
+          <a class="cta secondary" href="#content" onclick="loadSection('references')">References</a>
+          <a class="cta secondary" href="#content" onclick="loadSection('download')">Download</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a class="brand" href="#" onclick="loadSection('overview')">TIC × Burnout</a>
+      <div class="tabs" role="navigation" aria-label="Site sections">
+        <button onclick="loadSection('overview')">Overview</button>
+        <button onclick="loadSection('research')">Research</button>
+        <button onclick="loadSection('evidence')">Evidence Snapshot</button>
+        <button onclick="loadSection('literature')">Literature</button>
+        <button onclick="loadSection('framework')">Framework</button>
+        <button onclick="loadSection('methods')">Methods</button>
+        <button onclick="loadSection('outcomes')">Expected Outcomes</button>
+        <button onclick="loadSection('implications')">Implications</button>
+        <button onclick="loadSection('limitations')">Limitations</button>
+        <button onclick="loadSection('references')">References</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="content" class="content">
+    <div class="card">
+      <h2>Executive Summary</h2>
+      <p>
+        This microsite presents an evidence-informed capstone proposal examining whether trauma-informed care (TIC) training
+        may reduce burnout among juvenile justice professionals. It integrates (1) a structured synthesis of peer-reviewed literature,
+        (2) publicly available corrections workforce datasets used as contextual evidence, and (3) a proposed quasi-experimental evaluation design.
+      </p>
+      <div class="grid2">
+        <div class="info">
+          <h3>What is on this site</h3>
+          <ul>
+            <li><strong>Skimmable briefs</strong> for leaders and recruiters, with “read more” depth.</li>
+            <li><strong>Conceptual diagrams</strong> you can reuse in talks and posters.</li>
+            <li><strong>Transparent scholarship</strong>: all external claims are cited; no fabricated results.</li>
+          </ul>
+        </div>
+        <div class="info">
+          <h3>How to use it</h3>
+          <ul>
+            <li>Use the tabs to jump between sections.</li>
+            <li>Use “Evidence Snapshot” to understand the broader workforce context.</li>
+            <li>Use “Methods” to see how the TIC evaluation would be implemented.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Zafron Khan</div>
+      <div class="fineprint">
+        Academic integrity note: this project contains a proposed design and evidence synthesis. Any figures labeled “illustrative” are conceptual only.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    const d = new Date();
+    document.getElementById('year').textContent = d.getFullYear();
+    document.getElementById('lastUpdated').textContent = d.toISOString().slice(0,10);
+  </script>
+</body>
+</html>
